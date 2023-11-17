@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        p {
+            border: 1px dashed black;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text">Example text</p>
+    <div class="font">
+        <span>Font size:</span>
+        <button class="fontRais" onclick="raisProperty('fontSize')">+</button>
+        <button class="fontReduce" onclick="reduceProperty('fontSize')">-</button>
+    </div>
+    <div class="border">
+        <span>Border:</span>
+        <button class="borderRais" onclick="raisProperty('borderWidth')">+</button>
+        <button class="borderReduce" onclick="reduceProperty('borderWidth')">-</button>
+    </div>
+    <div class="width">
+        <span>Width:</span>
+        <button class="widthRais" onclick="raisProperty('width')">+</button>
+        <button class="widthReduce" onclick="reduceProperty('width')">-</button>
+    </div>
+    <div class="height">
+        <span>Height:</span>
+        <button class="heightRais" onclick="raisProperty('height')">+</button>
+        <button class="heightReduce" onclick="reduceProperty('height')">-</button>
+    </div>
+    <div class="color">
+        <span>Text Color:</span>
+        <input type="color" id="textColorInput">
+    </div>
+    <div class="backgroundcolor">
+        <span>Background Color:</span>
+        <input type="color" id="bgColorInput">
+    </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
